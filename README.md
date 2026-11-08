@@ -30,9 +30,13 @@ https://github.com/Wiwiweb/BalatroMods/assets/4723472/933f5a99-38a1-4c7f-a3ad-ff
 
 The hand score goes away too fast in vanilla, especially for big hands that increase the game speed a lot. Not only can you not see your score, which may be important for decisions, but it's also very anticlimactic to spend so much time building up the score and not spend a second seeing your result.
 
+Install: this mod is a folder, not a single lua file. Copy the `HoldForFinalHandScore` folder into `%appdata%\Balatro\Mods`. Needs a current Steamodded and Lovely.
+
 Details:
 * Resets game speed acceleration right before the final Chip X Mult.
-* Pauses 1.5 seconds (affected by game speed) for the final Chip X Mult, before it turns into the final hand score.
-* Pauses for the final hand score before it gets added to the round score. It waits for the flames to die down, or if there are no flames, it waits 1 second.
+* Pauses 1.5 seconds (affected by game speed) for the final Chip X Mult, before it turns into the final hand score. The pause is queued after the deck effect, so Plasma Deck's balancing is shown first.
+* Pauses for the final hand score before it gets added to the round score. It waits for the flames to die down (up to a maximum of 6 seconds, and it ignores NaN flame values so naneinf scores cannot softlock the game), or if there are no flames, it waits 1 second.
+* Deck effects (Plasma, Anaglyph) pass through untouched.
+* Pause times and on/off toggles are in the mod's config tab.
 
 I quite like the dramatic reveal of the hand score as the flames goes down. I didn't do that on purpose but it's cool.

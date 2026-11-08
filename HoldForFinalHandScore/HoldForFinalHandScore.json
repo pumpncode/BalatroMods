@@ -1,0 +1,13 @@
+{
+  "id": "HoldForFinalHandScore",
+  "name": "Hold For Final Hand Score",
+  "display_name": "Hold For Final Hand Score",
+  "author": ["Wiwiweb", "SilvertongueRED"],
+  "description": "Pauses for the final Chip X Mult count and again for the final hand score, so big hands no longer flash past too fast to read.",
+  "prefix": "hffhs",
+  "main_file": "main.lua",
+  "priority": 0,
+  "badge_colour": "B8860B",
+  "badge_text_colour": "FFFFFF",
+  "version": "2.0.0"
+}
